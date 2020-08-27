@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://fashionfreedom.eu/).-->
+    <version>0.6.0</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <increments>
+        <increment description="" formula="400" name="#width"/>
+        <increment description="" formula="750" name="#length"/>
+        <increment description="" formula="30" name="#string_channel_width"/>
+    </increments>
+    <draw name="bolsita">
+        <calculation>
+            <point id="1" mx="1.32292" my="2.64583" name="A" type="single" x="7.02594" y="9.77692"/>
+            <point angle="90" basePoint="1" id="2" length="#length" lineColor="black" mx="1.32292" my="2.64583" name="A1" type="endLine" typeLine="hair"/>
+            <point angle="90" basePoint="2" id="3" length="#string_channel_width*2" lineColor="black" mx="1.32292" my="2.64583" name="A2" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="3" id="4" length="#width" lineColor="black" mx="1.32292" my="2.64583" name="A3" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="4" id="5" length="Line_A1_A2" lineColor="black" mx="1.32292" my="2.64583" name="A4" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="5" id="6" length="Line_A_A1" lineColor="black" mx="1.32292" my="2.64583" name="A5" type="endLine" typeLine="hair"/>
+            <point angle="180" basePoint="6" id="7" length="Line_A2_A3" lineColor="black" mx="1.32292" my="2.64583" name="A6" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="2" id="8" length="Line_A2_A3" lineColor="black" mx="1.32292" my="2.64583" name="A7" type="endLine" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="9" idObject="7" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="10" idObject="2" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="11" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="12" idObject="4" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="13" idObject="8" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="14" idObject="6" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="15" inLayout="true" mx="45.8624" my="-4354.51" name="only-pane" seamAllowance="true" united="false" version="2" width="40">
+                <data annotation="" foldPosition="" fontSize="97" height="281.207" letter="a1" mx="420.532" my="-1986.49" onFold="true" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="224.776">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pLetter% %pName%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%wOnFold% quantity: %pQuantity%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pAnnotation%"/>
+                </data>
+                <patternInfo fontSize="0" height="10" mx="0" my="0" rotation="0" visible="true" width="10"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="9" type="NodePoint"/>
+                    <node idObject="10" type="NodePoint"/>
+                    <node idObject="11" type="NodePoint"/>
+                    <node after="0" idObject="12" type="NodePoint"/>
+                    <node after="0" before="0" idObject="13" type="NodePoint"/>
+                    <node before="0" idObject="14" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
