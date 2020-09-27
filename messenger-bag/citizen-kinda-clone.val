@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://fashionfreedom.eu/).-->
+    <version>0.6.0</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <increments>
+        <increment description="" formula="330" name="#height"/>
+        <increment description="" formula="170" name="#depth"/>
+        <increment description="" formula="520" name="#top_width"/>
+        <increment description="" formula="370" name="#bottom_width"/>
+        <increment description="" formula="#height" name="#flap_height"/>
+        <increment description="" formula="#bottom_width" name="#flap_width"/>
+        <increment description="" formula="#flap_height*0.5" name="#front_flap_height"/>
+        <increment description="" formula="30" name="#front_flap_offset"/>
+        <increment description="" formula="200" name="#front_pocket_width"/>
+        <increment description="" formula="210" name="#shoulder_attachment_width"/>
+        <increment description="" formula="380" name="#shoulder_attachment_length"/>
+        <increment description="" formula="35" name="#shoulder_attachment_angle"/>
+        <increment description="" formula="60" name="#armpit_attachment_angle"/>
+        <increment description="" formula="130" name="#armpit_attachment_length"/>
+        <increment description="" formula="160" name="#armpit_attachment_width"/>
+        <increment description="" formula="60" name="#strap_width"/>
+        <increment description="" formula="0.5*#shoulder_attachment_length" name="#straight_attachment_length"/>
+    </increments>
+    <draw name="back">
+        <calculation>
+            <point id="1" mx="1.32292" my="2.64583" name="A" type="single" x="7.9375" y="10.5833"/>
+            <point angle="90" basePoint="1" id="2" length="#height" lineColor="black" mx="1.32292" my="2.64583" name="A1" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="1" id="3" length="#bottom_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A2" secondPoint="2" type="normal" typeLine="hair"/>
+            <point angle="180" firstPoint="2" id="4" length="#top_width/2" lineColor="black" mx="1.32292" my="1.75279" name="A3" secondPoint="1" type="normal" typeLine="hair"/>
+            <line firstPoint="4" id="5" lineColor="black" secondPoint="3" typeLine="hair"/>
+            <point angle="180" basePoint="3" id="6" length="#depth" lineColor="black" mx="1.32292" my="2.64583" name="A4" type="endLine" typeLine="hair"/>
+            <line firstPoint="4" id="7" lineColor="black" secondPoint="6" typeLine="hair"/>
+            <point angle="270" basePoint="3" id="8" length="#depth" lineColor="black" mx="1.32292" my="2.64583" name="A5" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="1" id="9" length="#depth" lineColor="black" mx="1.32292" my="2.64583" name="A6" type="endLine" typeLine="hair"/>
+            <line firstPoint="8" id="10" lineColor="black" secondPoint="9" typeLine="hair"/>
+            <point angle="90" basePoint="2" id="11" length="#flap_height" lineColor="black" mx="1.32292" my="2.64583" name="A7" type="endLine" typeLine="hair"/>
+            <point angle="180" firstPoint="11" id="12" length="#flap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A8" secondPoint="2" type="normal" typeLine="hair"/>
+            <point angle="90" basePoint="4" id="13" length="#flap_height" lineColor="black" mx="1.32292" my="2.64583" name="A9" type="endLine" typeLine="hair"/>
+            <point firstPoint="4" id="14" length="#front_flap_height" lineColor="black" mx="1.32292" my="2.64583" name="A10" secondPoint="13" type="alongLine" typeLine="none"/>
+            <line firstPoint="14" id="16" lineColor="black" secondPoint="12" typeLine="hair"/>
+            <point firstPoint="4" id="22" length="300" lineColor="black" mx="1.32292" my="2.64583" name="A11" secondPoint="14" thirdPoint="2" type="bisector" typeLine="hair"/>
+            <point firstPoint="22" id="23" length="300" lineColor="black" mx="1.32292" my="2.64583" name="A12" secondPoint="14" thirdPoint="2" type="bisector" typeLine="hair"/>
+            <point id="24" mx="1.32292" my="2.64583" name="A13" p1Line1="22" p1Line2="4" p2Line1="14" p2Line2="2" type="lineIntersect"/>
+            <point id="25" mx="1.32292" my="2.64583" name="A14" p1Line1="23" p1Line2="2" p2Line1="14" p2Line2="4" type="lineIntersect"/>
+            <point firstPoint="2" id="26" length="#front_flap_offset" lineColor="black" mx="2.21596" my="2.64583" name="A15" secondPoint="1" type="alongLine" typeLine="none"/>
+            <point angle="270" basePoint="25" id="27" length="#front_flap_offset" lineColor="black" mx="1.32292" my="2.64583" name="A16" type="endLine" typeLine="hair"/>
+            <spline color="black" id="28" penStyle="hair" point1="14" point2="24" point3="27" point4="26" type="cubicBezier"/>
+            <point firstPoint="11" id="29" length="300" lineColor="black" mx="1.32292" my="2.64583" name="A17" secondPoint="14" thirdPoint="12" type="bisector" typeLine="hair"/>
+            <point id="30" mx="1.32292" my="2.64583" name="A18" p1Line1="29" p1Line2="12" p2Line1="14" p2Line2="11" type="lineIntersect"/>
+            <spline color="black" id="32" penStyle="hair" point1="14" point2="13" point3="30" point4="11" type="cubicBezier"/>
+            <point firstPoint="4" id="69" length="40" lineColor="black" mx="1.32292" my="2.64583" name="A19" secondPoint="3" type="alongLine" typeLine="none"/>
+            <point firstPoint="69" id="70" length="#shoulder_attachment_width" lineColor="black" mx="-50.9962" my="50.2417" name="A20" secondPoint="3" type="alongLine" typeLine="none"/>
+            <point firstPoint="69" id="71" length="#shoulder_attachment_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A21" secondPoint="70" type="alongLine" typeLine="none"/>
+            <point angle="180-#shoulder_attachment_angle" basePoint="71" id="72" length="#shoulder_attachment_length" lineColor="black" mx="1.32292" my="2.64583" name="A22" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="72" id="73" length="#strap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A23" secondPoint="71" type="normal" typeLine="hair"/>
+            <point angle="180" firstPoint="72" id="74" length="#strap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A24" secondPoint="71" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="73" id="75" length="#straight_attachment_length" lineColor="black" mx="1.32292" my="2.64583" name="A25" secondPoint="72" type="normal" typeLine="hair"/>
+            <point angle="180" firstPoint="74" id="76" length="#straight_attachment_length" lineColor="black" mx="1.32292" my="2.64583" name="A26" secondPoint="72" type="normal" typeLine="hair"/>
+            <line firstPoint="76" id="77" lineColor="black" secondPoint="70" typeLine="hair"/>
+            <line firstPoint="75" id="78" lineColor="black" secondPoint="69" typeLine="hair"/>
+            <spline color="black" id="79" penStyle="hair" point1="74" point2="76" point3="70" point4="70" type="cubicBezier"/>
+            <spline color="black" id="80" penStyle="hair" point1="73" point2="75" point3="75" point4="69" type="cubicBezier"/>
+            <arc angle1="0" angle2="360" center="72" color="black" id="81" penStyle="hair" radius="#strap_width/2" type="simple"/>
+            <point angle="180-#armpit_attachment_angle" basePoint="71" id="82" length="#armpit_attachment_length" lineColor="black" mx="1.32292" my="2.64583" name="A27" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="82" id="83" length="#strap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A28" secondPoint="71" type="normal" typeLine="hair"/>
+            <point angle="180" firstPoint="82" id="84" length="#strap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A29" secondPoint="71" type="normal" typeLine="hair"/>
+            <point angle="0" basePoint="83" id="85" length="150" lineColor="black" mx="1.32292" my="2.64583" name="A30" type="endLine" typeLine="hair"/>
+            <point id="86" mx="1.32292" my="2.64583" name="A31" p1Line1="83" p1Line2="4" p2Line1="85" p2Line2="71" type="lineIntersect"/>
+            <point angle="180" firstPoint="84" id="87" length="300" lineColor="black" mx="1.32292" my="2.64583" name="A32" secondPoint="82" type="normal" typeLine="hair"/>
+            <point id="88" mx="98.3313" my="-19.5171" name="A33" p1Line1="3" p1Line2="84" p2Line1="4" p2Line2="87" type="lineIntersect"/>
+        </calculation>
+        <modeling>
+            <point id="33" idObject="1" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="34" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="35" idObject="4" inUse="true" mx="1.32292" my="1.75279" type="modeling"/>
+            <point id="36" idObject="2" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="52" idObject="9" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="53" idObject="8" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="54" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="55" idObject="6" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="56" idObject="4" inUse="true" mx="1.32292" my="1.75279" type="modeling"/>
+            <point id="57" idObject="14" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <spline id="58" idObject="32" inUse="true" type="modelingSpline"/>
+            <point id="59" idObject="11" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="61" idObject="9" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="62" idObject="8" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="63" idObject="3" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="64" idObject="4" inUse="false" mx="1.32292" my="1.75279" type="modeling"/>
+            <point id="65" idObject="14" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <spline id="66" idObject="28" inUse="false" type="modelingSpline"/>
+            <point id="67" idObject="26" inUse="false" mx="2.21596" my="2.64583" type="modeling"/>
+            <point id="94" idObject="70" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <spline id="95" idObject="79" inUse="true" type="modelingSpline"/>
+            <point id="96" idObject="74" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="97" idObject="81" inUse="true" type="modeling"/>
+            <point id="98" idObject="73" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <spline id="99" idObject="80" inUse="true" type="modelingSpline"/>
+            <point id="100" idObject="69" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="102" idObject="88" inUse="true" mx="39.5763" my="68.6155" type="modeling"/>
+            <point id="103" idObject="84" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="104" idObject="83" inUse="true" mx="-41.408" my="-109.523" type="modeling"/>
+            <point id="105" idObject="86" inUse="true" mx="82.7788" my="-64.1213" type="modeling"/>
+            <point id="107" idObject="1" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="108" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="109" idObject="4" inUse="true" mx="1.32292" my="1.75279" type="modeling"/>
+            <point id="110" idObject="14" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <spline id="111" idObject="28" inUse="true" type="modelingSpline"/>
+            <point id="112" idObject="26" inUse="true" mx="2.21596" my="2.64583" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="37" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="true" united="false" version="2" width="20">
+                <data annotation="1 liner, 1 outer" foldPosition="" fontSize="195" height="137.67" letter="" mx="-717.491" my="-1106.74" onFold="true" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="171.353">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="qty: %pQuantity%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pAnnotation%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%wOnFold%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="33" type="NodePoint"/>
+                    <node idObject="34" type="NodePoint"/>
+                    <node after="0" idObject="35" type="NodePoint"/>
+                    <node after="0" before="0" idObject="36" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="60" inLayout="true" mx="404.609" my="-69.4378" name="Detail" seamAllowance="true" united="false" version="2" width="20">
+                <data annotation="1 outer 1 liner" foldPosition="" fontSize="112" height="211.827" letter="" mx="-766.326" my="-1278.52" onFold="true" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="181.074">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="qty: %pQuantity%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pAnnotation%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%wOnFold%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="52" type="NodePoint"/>
+                    <node idObject="53" type="NodePoint"/>
+                    <node idObject="54" type="NodePoint"/>
+                    <node idObject="55" type="NodePoint"/>
+                    <node idObject="56" type="NodePoint"/>
+                    <node after="0" before="0" idObject="57" type="NodePoint"/>
+                    <node idObject="58" reverse="0" type="NodeSpline"/>
+                    <node after="0" before="0" idObject="59" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="101" inLayout="true" mx="-38.9464" my="-493.245" name="Detail" seamAllowance="true" united="false" version="2" width="20">
+                <data annotation="mirrored, outer" foldPosition="" fontSize="43" height="88.7089" letter="" mx="-1218.7" my="-1050.29" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="75.6625">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="qty: %pQuantity%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pAnnotation%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%wOnFold%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="94" type="NodePoint"/>
+                    <node idObject="95" reverse="1" type="NodeSpline"/>
+                    <node idObject="96" type="NodePoint"/>
+                    <node idObject="97" reverse="1" type="NodeArc"/>
+                    <node idObject="98" type="NodePoint"/>
+                    <node idObject="99" reverse="0" type="NodeSpline"/>
+                    <node idObject="100" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="106" inLayout="true" mx="-747.791" my="-81.4558" name="Detail" seamAllowance="true" united="false" version="2" width="20">
+                <data annotation="mirrored, outer" foldPosition="" fontSize="25" height="46.2983" letter="" mx="-1082.39" my="-1071.49" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="43.5819">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="qty: %pQuantity%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pAnnotation%"/>
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%wOnFold%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="102" type="NodePoint"/>
+                    <node idObject="103" type="NodePoint"/>
+                    <node idObject="104" type="NodePoint"/>
+                    <node idObject="105" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="113" inLayout="true" mx="-395.276" my="-111.55" name="Detail" seamAllowance="true" united="false" version="2" width="20">
+                <data annotation="1 outer" foldPosition="" fontSize="0" height="100" letter="" mx="0" my="0" onFold="true" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="100"/>
+                <patternInfo fontSize="0" height="100" mx="0" my="0" rotation="0" visible="true" width="100"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="107" type="NodePoint"/>
+                    <node idObject="108" type="NodePoint"/>
+                    <node idObject="109" type="NodePoint"/>
+                    <node after="0" before="0" idObject="110" type="NodePoint"/>
+                    <node idObject="111" reverse="0" type="NodeSpline"/>
+                    <node after="0" before="0" idObject="112" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
