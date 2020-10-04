@@ -8,7 +8,7 @@
     <measurements/>
     <increments>
         <increment description="" formula="30" name="#width"/>
-        <increment description="" formula="3" name="#seam_allowance"/>
+        <increment description="" formula="2" name="#seam_allowance"/>
         <increment description="" formula="5" name="#lock_radius"/>
         <increment description="" formula="5" name="#base_radius"/>
         <increment description="" formula="2" name="#strap_width"/>
@@ -19,7 +19,7 @@
         <increment description="" formula="20" name="#rolltop_allowance"/>
         <increment description="" formula="10" name="#lock_width"/>
         <increment description="" formula="8" name="#lock_height"/>
-        <increment description="" formula="3" name="#lock_allowance"/>
+        <increment description="" formula="2" name="#lock_allowance"/>
     </increments>
     <draw name="rack-bag">
         <calculation>
@@ -124,14 +124,6 @@
             <line firstPoint="42" id="48" lineColor="black" secondPoint="45" typeLine="hair"/>
         </calculation>
         <modeling>
-            <point id="49" idObject="42" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="50" idObject="45" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="51" idObject="46" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="52" idObject="43" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="54" idObject="42" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="55" idObject="45" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="56" idObject="46" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
-            <point id="57" idObject="43" inUse="false" mx="0.132292" my="0.264583" type="modeling"/>
             <point id="58" idObject="42" inUse="true" mx="0.132292" my="0.264583" type="modeling"/>
             <point id="59" idObject="45" inUse="true" mx="0.132292" my="0.264583" type="modeling"/>
             <point id="60" idObject="46" inUse="true" mx="0.132292" my="0.264583" type="modeling"/>
