@@ -137,11 +137,6 @@
             <point id="157" idObject="133" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
             <spline id="158" idObject="80" inUse="true" type="modelingSpline"/>
             <point id="159" idObject="69" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="166" idObject="114" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="167" idObject="161" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="168" idObject="163" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
-            <spline id="169" idObject="28" inUse="false" type="modelingSpline"/>
-            <point id="170" idObject="26" inUse="false" mx="2.21596" my="2.64583" type="modeling"/>
             <point id="175" idObject="114" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
             <point id="176" idObject="161" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
             <point id="177" idObject="172" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
@@ -161,7 +156,7 @@
             <point id="205" idObject="11" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
         </modeling>
         <details>
-            <detail forbidFlipping="false" hideMainPath="false" id="37" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+            <detail forbidFlipping="false" hideMainPath="false" id="37" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="#seam_allowance">
                 <data annotation="1 liner, 1 outer" foldPosition="" fontSize="195" height="137.67" letter="" mx="-717.491" my="-1106.74" onFold="true" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="171.353">
                     <line alignment="0" bold="false" italic="false" sfIncrement="0" text="qty: %pQuantity%"/>
                     <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pAnnotation%"/>
@@ -185,17 +180,17 @@
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
                 <nodes>
-                    <node before="0" idObject="52" type="NodePoint"/>
-                    <node idObject="53" type="NodePoint"/>
+                    <node after="0" before="0" idObject="52" type="NodePoint"/>
+                    <node before="0" idObject="53" type="NodePoint"/>
                     <node idObject="54" type="NodePoint"/>
-                    <node idObject="55" type="NodePoint"/>
-                    <node idObject="56" type="NodePoint"/>
+                    <node after="0" idObject="55" type="NodePoint"/>
+                    <node after="0" before="0" idObject="56" type="NodePoint"/>
                     <node after="0" before="0" idObject="57" type="NodePoint"/>
                     <node idObject="58" reverse="0" type="NodeSpline"/>
                     <node after="0" before="0" idObject="59" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail forbidFlipping="false" hideMainPath="false" id="124" inLayout="true" mx="-349.646" my="-116.141" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+            <detail forbidFlipping="false" hideMainPath="false" id="124" inLayout="true" mx="-349.646" my="-116.141" name="Detail" seamAllowance="false" united="false" version="2" width="#seam_allowance">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -257,7 +252,7 @@
                     <node idObject="159" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail forbidFlipping="false" hideMainPath="false" id="179" inLayout="true" mx="-349.355" my="-116.769" name="Detail" seamAllowance="false" united="false" version="2" width="6.35">
+            <detail forbidFlipping="false" hideMainPath="false" id="179" inLayout="true" mx="-321.506" my="60.1545" name="Detail" seamAllowance="false" united="false" version="2" width="6.35">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
