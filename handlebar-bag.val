@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://fashionfreedom.eu/).-->
+    <version>0.6.0</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <increments>
+        <increment description="" formula="150" name="#diameter"/>
+        <increment description="" formula="3.14159" name="#pi"/>
+        <increment description="" formula="300" name="#width"/>
+        <increment description="" formula="14" name="#seam_allowance"/>
+        <increment description="" formula="20" name="#zipper_width"/>
+        <increment description="" formula="30" name="#zipper_flap_width"/>
+        <increment description="" formula="110" name="#side_pocket_height"/>
+        <increment description="" formula="40" name="#side_pocket_extra_width"/>
+        <increment description="" formula="15" name="#elastic_channel_width"/>
+    </increments>
+    <draw name="sausage-for-sausages">
+        <calculation>
+            <point id="1" mx="1.32292" my="2.64583" name="A" type="single" x="7.9375" y="10.5833"/>
+            <point angle="90" basePoint="1" id="2" length="#pi*#diameter/2-#zipper_width" lineColor="black" mx="1.32292" my="2.64583" name="A1" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="2" id="3" length="#width" lineColor="black" mx="1.32292" my="2.64583" name="A2" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="3" id="4" length="Line_A_A1" lineColor="black" mx="1.32292" my="2.64583" name="A3" type="endLine" typeLine="hair"/>
+            <line firstPoint="1" id="5" lineColor="black" secondPoint="4" typeLine="hair"/>
+            <point firstPoint="1" id="18" length="#zipper_flap_width" lineColor="black" mx="1.32292" my="2.64583" name="A4" secondPoint="2" type="alongLine" typeLine="none"/>
+            <point firstPoint="4" id="19" length="Line_A_A4" lineColor="black" mx="1.32292" my="2.64583" name="A5" secondPoint="3" type="alongLine" typeLine="none"/>
+            <line firstPoint="18" id="20" lineColor="black" secondPoint="19" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="6" idObject="1" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="7" idObject="2" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="8" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="9" idObject="4" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="21" idObject="1" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="22" idObject="18" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="23" idObject="19" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="24" idObject="4" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="10" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="6" type="NodePoint"/>
+                    <node after="0" idObject="7" type="NodePoint"/>
+                    <node before="0" idObject="8" type="NodePoint"/>
+                    <node idObject="9" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="25" inLayout="true" mx="35.7682" my="81.2914" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="21" type="NodePoint"/>
+                    <node idObject="22" type="NodePoint"/>
+                    <node idObject="23" type="NodePoint"/>
+                    <node after="0" idObject="24" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="sides">
+        <calculation>
+            <point id="11" mx="1.32292" my="2.64583" name="B" type="single" x="7.9375" y="263.484"/>
+            <arc angle1="0" angle2="360" center="11" color="black" id="12" penStyle="hair" radius="#diameter/2" type="simple"/>
+        </calculation>
+        <modeling>
+            <arc id="26" idObject="12" inUse="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="27" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="26" reverse="1" type="NodeArc"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="pocket">
+        <calculation>
+            <point id="28" mx="1.32292" my="2.64583" name="C" type="single" x="399.634" y="10.5833"/>
+            <arc angle1="90" angle2="270" center="28" color="black" id="29" penStyle="hair" radius="#diameter/2" type="simple"/>
+            <point angle="90" basePoint="28" id="30" length="#side_pocket_height-(#diameter/2)" lineColor="black" mx="1.32292" my="2.64583" name="C1" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="28" id="31" length="#side_pocket_extra_width" lineColor="black" mx="1.32292" my="2.64583" name="C2" type="endLine" typeLine="hair"/>
+            <arc angle1="270" angle2="90" center="31" color="black" id="32" penStyle="hair" radius="#diameter/2" type="simple"/>
+            <point angle="180" basePoint="30" curve="29" id="33" lineColor="black" mx="1.32292" my="2.64583" name="C3" type="curveIntersectAxis" typeLine="hair"/>
+            <point angle="0" basePoint="30" curve="32" id="36" lineColor="black" mx="1.32292" my="2.64583" name="C4" type="curveIntersectAxis" typeLine="hair"/>
+            <point angle="90" basePoint="33" id="39" length="#elastic_channel_width" lineColor="black" mx="1.32292" my="2.64583" name="C5" type="endLine" typeLine="hair"/>
+            <point angle="90" basePoint="36" id="40" length="Line_C3_C5" lineColor="black" mx="1.32292" my="2.64583" name="C6" type="endLine" typeLine="hair"/>
+            <line firstPoint="39" id="41" lineColor="black" secondPoint="40" typeLine="hair"/>
+            <point angle="270" basePoint="28" id="48" length="#diameter/2" lineColor="black" mx="1.32292" my="2.64583" name="C7" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="31" id="49" length="Line_C_C7" lineColor="black" mx="1.32292" my="2.64583" name="C8" type="endLine" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="42" idObject="33" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="43" idObject="39" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="44" idObject="40" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="45" idObject="36" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="46" idObject="32" inUse="false" type="modeling"/>
+            <arc id="47" idObject="29" inUse="false" type="modeling"/>
+            <point id="50" idObject="48" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="51" idObject="29" inUse="false" type="modeling"/>
+            <point id="52" idObject="33" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="53" idObject="36" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="54" idObject="32" inUse="false" type="modeling"/>
+            <point id="55" idObject="49" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="56" idObject="48" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="57" idObject="29" inUse="true" type="modeling"/>
+            <point id="58" idObject="33" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="59" idObject="39" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="60" idObject="40" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="61" idObject="36" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="62" idObject="32" inUse="true" type="modeling"/>
+            <point id="63" idObject="49" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="64" inLayout="true" mx="149.711" my="17.0557" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="56" type="NodePoint"/>
+                    <node idObject="57" reverse="1" type="NodeArc"/>
+                    <node idObject="58" type="NodePoint"/>
+                    <node idObject="59" type="NodePoint"/>
+                    <node idObject="60" type="NodePoint"/>
+                    <node idObject="61" type="NodePoint"/>
+                    <node idObject="62" reverse="1" type="NodeArc"/>
+                    <node idObject="63" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
