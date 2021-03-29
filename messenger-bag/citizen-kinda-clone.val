@@ -7,28 +7,30 @@
     <notes/>
     <measurements/>
     <increments>
-        <increment description="" formula="230" name="#height"/>
-        <increment description="" formula="140" name="#bottom_depth"/>
-        <increment description="" formula="120" name="#top_depth"/>
-        <increment description="" formula="420" name="#top_width"/>
-        <increment description="" formula="330" name="#bottom_width"/>
-        <increment description="" formula="330" name="#shoulder_attachment_length"/>
+        <increment description="" formula="260" name="#height"/>
+        <increment description="" formula="160" name="#bottom_depth"/>
+        <increment description="" formula="140" name="#top_depth"/>
+        <increment description="" formula="570" name="#top_width"/>
+        <increment description="" formula="480" name="#bottom_width"/>
+        <increment description="" formula="450" name="#shoulder_attachment_length"/>
         <increment description="" formula="35" name="#shoulder_attachment_angle"/>
         <increment description="" formula="30" name="#shoulder_attachment_offset"/>
-        <increment description="" formula="60" name="#armpit_attachment_angle"/>
-        <increment description="" formula="60" name="#shoulder_strap_width"/>
+        <increment description="" formula="45" name="#armpit_attachment_angle"/>
+        <increment description="" formula="70" name="#shoulder_strap_width"/>
         <increment description="" formula="0.5*#shoulder_attachment_length" name="#straight_attachment_length"/>
-        <increment description="" formula="15" name="#seam_allowance"/>
+        <increment description="" formula="17" name="#seam_allowance"/>
         <increment description="" formula="50" name="#flap_velcro_offset"/>
         <increment description="" formula="50" name="#velcro_width"/>
         <increment description="" formula="30" name="#flap_strap_width"/>
         <increment description="" formula="20" name="#flap_strap_offset"/>
         <increment description="" formula="20" name="#stabilizer_strap_attachment_offset"/>
-        <increment description="" formula="30" name="#pocket_offset"/>
+        <increment description="" formula="50" name="#pocket_offset"/>
         <increment description="" formula="80" name="#pocket_depth"/>
-        <increment description="" formula="(#height-#pocket_offset)/2" name="#pocket_flap_length"/>
+        <increment description="" formula="#height/2" name="#pocket_flap_height"/>
+        <increment description="" formula="35" name="#pocket_flap_extra"/>
         <increment description="" formula="50" name="#pocket_flap_radius"/>
         <increment description="" formula="#height+#top_depth-#pocket_offset" name="#flap_height"/>
+        <increment description="" formula="140" name="#ulock_width"/>
     </increments>
     <draw name="back">
         <calculation>
@@ -44,7 +46,7 @@
             <point angle="90" basePoint="2" id="11" length="#flap_height" lineColor="black" mx="1.32292" my="2.64583" name="A7" type="endLine" typeLine="hair"/>
             <point firstPoint="4" id="69" length="#shoulder_attachment_offset" lineColor="black" mx="53.0711" my="-3.63323" name="A19" secondPoint="3" type="alongLine" typeLine="none"/>
             <point firstPoint="69" id="70" length="Line_A19_A2-#shoulder_attachment_offset" lineColor="black" mx="-48.2576" my="121.446" name="A20" secondPoint="3" type="alongLine" typeLine="none"/>
-            <point firstPoint="69" id="71" length="Line_A19_A20/2" lineColor="black" mx="1.32292" my="2.64583" name="A21" secondPoint="70" type="alongLine" typeLine="none"/>
+            <point firstPoint="69" id="71" length="Line_A19_A20/2" lineColor="black" mx="-110.189" my="48.2983" name="A21" secondPoint="70" type="alongLine" typeLine="none"/>
             <point angle="180-#shoulder_attachment_angle" basePoint="71" id="72" length="#shoulder_attachment_length" lineColor="black" mx="1.32292" my="2.64583" name="A22" type="endLine" typeLine="hair"/>
             <point angle="0" firstPoint="72" id="73" length="#shoulder_strap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A23" secondPoint="71" type="normal" typeLine="hair"/>
             <point angle="180" firstPoint="72" id="74" length="#shoulder_strap_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A24" secondPoint="71" type="normal" typeLine="hair"/>
@@ -87,11 +89,11 @@
             <point angle="0" firstPoint="251" id="253" length="600" lineColor="black" mx="1.32292" my="2.64583" name="A40" secondPoint="11" type="normal" typeLine="dotLine"/>
             <point id="254" mx="1.32292" my="2.64583" name="A41" p1Line1="253" p1Line2="235" p2Line1="251" p2Line2="236" type="lineIntersect"/>
             <point id="255" mx="1.32292" my="2.64583" name="A42" p1Line1="252" p1Line2="235" p2Line1="250" p2Line2="236" type="lineIntersect"/>
-            <point firstPoint="3" id="269" length="#flap_strap_offset" lineColor="black" mx="1.32292" my="2.64583" name="A45" secondPoint="1" type="alongLine" typeLine="none"/>
-            <point firstPoint="269" id="271" length="#flap_strap_width" lineColor="black" mx="-5.59559" my="28.1911" name="A47" secondPoint="1" type="alongLine" typeLine="none"/>
+            <point firstPoint="3" id="269" length="#flap_strap_offset" lineColor="black" mx="2.07132" my="2.64583" name="A45" secondPoint="1" type="alongLine" typeLine="none"/>
+            <point firstPoint="269" id="271" length="#flap_strap_width" lineColor="black" mx="-4.09879" my="28.1911" name="A47" secondPoint="1" type="alongLine" typeLine="none"/>
             <point angle="0" firstPoint="269" id="272" length="#height*3" lineColor="black" mx="1.32292" my="2.64583" name="A43" secondPoint="1" type="normal" typeLine="dotLine"/>
             <point angle="0" firstPoint="271" id="273" length="#height*3" lineColor="black" mx="1.32292" my="2.64583" name="A44" secondPoint="1" type="normal" typeLine="dotLine"/>
-            <point id="274" mx="1.32292" my="2.64583" name="A46" p1Line1="4" p1Line2="269" p2Line1="2" p2Line2="272" type="lineIntersect"/>
+            <point id="274" mx="-1.64196" my="44.1541" name="A46" p1Line1="4" p1Line2="269" p2Line1="2" p2Line2="272" type="lineIntersect"/>
             <point id="275" mx="1.32292" my="2.64583" name="A48" p1Line1="271" p1Line2="4" p2Line1="273" p2Line2="2" type="lineIntersect"/>
             <point id="276" mx="1.32292" my="2.64583" name="A49" p1Line1="254" p1Line2="273" p2Line1="251" p2Line2="271" type="lineIntersect"/>
             <point id="277" mx="1.32292" my="2.64583" name="A50" p1Line1="254" p1Line2="272" p2Line1="251" p2Line2="269" type="lineIntersect"/>
@@ -108,7 +110,7 @@
             <point firstPoint="1" id="313" length="#velcro_width/2" lineColor="black" mx="1.32292" my="2.64583" name="A59" secondPoint="3" type="alongLine" typeLine="none"/>
             <point firstPoint="275" id="315" length="#velcro_width" lineColor="black" mx="30.2801" my="-41.4156" name="A61" secondPoint="2" type="alongLine" typeLine="none"/>
             <point firstPoint="271" id="316" length="#velcro_width" lineColor="black" mx="19.9497" my="168.69" name="A62" secondPoint="1" type="alongLine" typeLine="none"/>
-            <point angle="90.0296" basePoint="316" id="317" length="229.315" lineColor="black" mx="18.8853" my="-183.622" name="A63" type="endLine" typeLine="dotLine"/>
+            <point angle="90.0296" basePoint="316" id="317" length="#height" lineColor="black" mx="18.8853" my="-183.622" name="A63" type="endLine" typeLine="dotLine"/>
             <point firstPoint="1" id="318" length="#pocket_offset" lineColor="black" mx="1.32292" my="2.64583" name="A34" secondPoint="2" type="alongLine" typeLine="none"/>
             <point firstPoint="271" id="319" length="#pocket_offset" lineColor="black" mx="1.32292" my="2.64583" name="A64" secondPoint="275" type="alongLine" typeLine="none"/>
             <line firstPoint="319" id="320" lineColor="black" secondPoint="318" typeLine="hair"/>
@@ -118,13 +120,16 @@
             <point angle="180" basePoint="319" id="324" length="#pocket_depth" lineColor="black" mx="1.32292" my="2.64583" name="A65" type="endLine" typeLine="hair"/>
             <point angle="180" basePoint="275" id="325" length="#pocket_depth" lineColor="black" mx="1.32292" my="2.64583" name="A66" type="endLine" typeLine="hair"/>
             <line firstPoint="325" id="326" lineColor="black" secondPoint="324" typeLine="hair"/>
-            <point firstPoint="2" id="335" length="#pocket_flap_length" lineColor="black" mx="1.32292" my="2.64583" name="A67" secondPoint="318" type="alongLine" typeLine="none"/>
-            <point firstPoint="275" id="336" length="#pocket_flap_length" lineColor="black" mx="1.32292" my="2.64583" name="A68" secondPoint="319" type="alongLine" typeLine="none"/>
-            <line firstPoint="336" id="337" lineColor="black" secondPoint="335" typeLine="hair"/>
-            <point firstPoint="336" id="338" length="#pocket_flap_radius" lineColor="black" mx="1.32292" my="2.64583" name="A69" secondPoint="335" type="alongLine" typeLine="none"/>
-            <point angle="90" basePoint="338" id="339" length="#pocket_flap_radius" lineColor="black" mx="1.32292" my="2.64583" name="A70" type="endLine" typeLine="hair"/>
-            <arc angle1="180" angle2="270" center="339" color="black" id="340" penStyle="hair" radius="#pocket_flap_radius" type="simple"/>
+            <point firstPoint="2" id="335" length="#pocket_flap_height" lineColor="black" mx="0.574519" my="2.64583" name="A67" secondPoint="318" type="alongLine" typeLine="none"/>
             <line firstPoint="313" id="352" lineColor="black" secondPoint="312" typeLine="hair"/>
+            <point firstPoint="275" id="359" length="#pocket_flap_extra" lineColor="black" mx="-28.3258" my="-60.3578" name="A60" secondPoint="4" type="alongLine" typeLine="none"/>
+            <point angle="270" basePoint="359" id="360" length="#pocket_flap_height" lineColor="black" mx="0.574519" my="1.89743" name="A71" type="endLine" typeLine="hair"/>
+            <line firstPoint="360" id="361" lineColor="black" secondPoint="335" typeLine="hair"/>
+            <point firstPoint="360" id="362" length="#pocket_flap_radius" lineColor="black" mx="1.32292" my="2.64583" name="A68" secondPoint="335" type="alongLine" typeLine="none"/>
+            <point firstPoint="360" id="363" length="#pocket_flap_radius" lineColor="black" mx="1.32292" my="2.64583" name="A69" secondPoint="359" type="alongLine" typeLine="none"/>
+            <line firstPoint="363" id="364" lineColor="black" secondPoint="362" typeLine="hair"/>
+            <point firstPoint="2" id="376" length="#ulock_width/2" lineColor="black" mx="15.4061" my="-75.1822" name="A70" secondPoint="4" type="alongLine" typeLine="none"/>
+            <point angle="270" basePoint="376" id="377" length="#height" lineColor="black" mx="1.32292" my="2.64583" name="A72" type="endLine" typeLine="hair"/>
         </calculation>
         <modeling>
             <point id="136" idObject="70" inUse="true" mx="-50.9962" my="50.2417" type="modeling"/>
@@ -239,23 +244,10 @@
                     <node idObject="333" type="NodePoint"/>
                 </nodes>
             </path>
-            <point id="341" idObject="335" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="342" idObject="338" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <arc id="343" idObject="340" inUse="true" type="modeling"/>
-            <point id="344" idObject="275" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="345" idObject="2" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="347" idObject="335" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <point id="348" idObject="338" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <arc id="349" idObject="340" inUse="true" type="modeling"/>
-            <point id="350" idObject="275" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
-            <path cut="false" id="351" inUse="true" name="Unnamed path" type="2" typeLine="dotLine">
-                <nodes>
-                    <node idObject="347" type="NodePoint"/>
-                    <node idObject="348" type="NodePoint"/>
-                    <node idObject="349" reverse="1" type="NodeArc"/>
-                    <node idObject="350" type="NodePoint"/>
-                </nodes>
-            </path>
+            <point id="347" idObject="335" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="348" idObject="338" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
+            <arc id="349" idObject="340" inUse="false" type="modeling"/>
+            <point id="350" idObject="275" inUse="false" mx="1.32292" my="2.64583" type="modeling"/>
             <point id="353" idObject="313" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
             <point id="354" idObject="312" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
             <path cut="false" id="355" inUse="true" name="Unnamed path" type="2" typeLine="dotLine">
@@ -270,6 +262,31 @@
                 <nodes>
                     <node idObject="356" type="NodePoint"/>
                     <node idObject="357" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="365" idObject="362" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="366" idObject="363" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="367" idObject="359" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="368" idObject="2" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="369" idObject="335" inUse="true" mx="0.574519" my="2.64583" type="modeling"/>
+            <point id="371" idObject="359" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="372" idObject="363" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="373" idObject="362" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="374" idObject="335" inUse="true" mx="0.574519" my="2.64583" type="modeling"/>
+            <path cut="false" id="375" name="Unnamed path" type="2" typeLine="dotLine">
+                <nodes>
+                    <node idObject="371" type="NodePoint"/>
+                    <node idObject="372" type="NodePoint"/>
+                    <node idObject="373" type="NodePoint"/>
+                    <node idObject="374" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="378" idObject="376" inUse="true" mx="15.4061" my="-75.1822" type="modeling"/>
+            <point id="379" idObject="377" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <path cut="false" id="380" name="Unnamed path" type="2" typeLine="hair">
+                <nodes>
+                    <node idObject="378" type="NodePoint"/>
+                    <node idObject="379" type="NodePoint"/>
                 </nodes>
             </path>
         </modeling>
@@ -300,7 +317,7 @@
                     <node idObject="144" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail forbidFlipping="false" hideMainPath="false" id="249" inLayout="true" mx="749.125" my="24.3998" name="back" seamAllowance="true" united="false" version="2" width="0">
+            <detail forbidFlipping="false" hideMainPath="false" id="249" inLayout="true" mx="750.859" my="24.3998" name="back" seamAllowance="true" united="false" version="2" width="0">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -321,7 +338,7 @@
                     <record path="301"/>
                 </iPaths>
             </detail>
-            <detail forbidFlipping="false" hideMainPath="false" id="266" inLayout="true" mx="198.916" my="110.109" name="front" seamAllowance="false" united="false" version="2" width="6.35">
+            <detail forbidFlipping="false" hideMainPath="false" id="266" inLayout="true" mx="205.292" my="114.751" name="front" seamAllowance="false" united="false" version="2" width="6.35">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -335,7 +352,8 @@
                     <record path="287"/>
                     <record path="290"/>
                     <record path="311"/>
-                    <record path="351"/>
+                    <record path="375"/>
+                    <record path="380"/>
                 </iPaths>
             </detail>
             <detail forbidFlipping="false" hideMainPath="false" id="295" inLayout="true" mx="-241.455" my="82.5471" name="flap accent" seamAllowance="true" united="false" version="2" width="0">
@@ -365,16 +383,16 @@
                     <record path="358"/>
                 </iPaths>
             </detail>
-            <detail forbidFlipping="false" hideMainPath="false" id="346" inLayout="true" mx="143.21" my="-77.1131" name="pocket flap" seamAllowance="false" united="false" version="2" width="6.35">
+            <detail forbidFlipping="false" hideMainPath="false" id="370" inLayout="true" mx="227.097" my="-71.0762" name="Detail" seamAllowance="false" united="false" version="2" width="6.35">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
                 <nodes>
-                    <node idObject="341" type="NodePoint"/>
-                    <node idObject="342" type="NodePoint"/>
-                    <node idObject="343" reverse="1" type="NodeArc"/>
-                    <node idObject="344" type="NodePoint"/>
-                    <node idObject="345" type="NodePoint"/>
+                    <node idObject="365" type="NodePoint"/>
+                    <node idObject="366" type="NodePoint"/>
+                    <node idObject="367" type="NodePoint"/>
+                    <node idObject="368" type="NodePoint"/>
+                    <node idObject="369" type="NodePoint"/>
                 </nodes>
             </detail>
         </details>
