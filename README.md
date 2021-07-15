@@ -12,3 +12,5 @@ Here you'll find [seamly2d](https://seamly.net/) patterns for my sewing projects
 - [My best hip bag so far](./hipbag/seamly2d/hipbag-front-attachment.val)
 - [A zippered hipbag pattern I made for a coworker](./hipbag/cheta-de-belgrano.val)
 - [The true and only hot dog bag](./handlebar-bag.val)
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
