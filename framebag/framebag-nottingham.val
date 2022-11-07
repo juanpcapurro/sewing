@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://fashionfreedom.eu/).-->
+    <version>0.6.0</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <increments>
+        <increment description="" formula="440" name="#st_length"/>
+        <increment description="" formula="75" name="#st_angle"/>
+        <increment description="" formula="51" name="#dt_angle"/>
+        <increment description="" formula="570" name="#dt_length"/>
+        <increment description="" formula="10" name="#tt_angle"/>
+        <increment description="" formula="480" name="#tt_length"/>
+        <increment description="" formula="60" name="#ht_length"/>
+        <increment description="" formula="77.5" name="#ht_angle"/>
+        <increment description="" formula="50" name="#velcro_width"/>
+        <increment description="" formula="300" name="#rolltop_width"/>
+        <increment description="" formula="150" name="#rolltop_height"/>
+        <increment description="" formula="40" name="#zipper_distance_to_top"/>
+        <increment description="" formula="400" name="#zipper_length"/>
+        <increment description="" formula="12" name="#seam_allowance"/>
+    </increments>
+    <draw name="framebag">
+        <calculation>
+            <point id="1" mx="1.32292" my="2.64583" name="A" type="single" x="7.9375" y="10.5833"/>
+            <point angle="180-#st_angle" basePoint="1" id="2" length="#st_length" lineColor="black" mx="1.32292" my="2.64583" name="A1" type="endLine" typeLine="hair"/>
+            <point angle="#tt_angle" basePoint="2" id="3" length="#tt_length" lineColor="black" mx="1.32292" my="2.64583" name="A2" type="endLine" typeLine="hair"/>
+            <point angle="-#ht_angle" basePoint="3" id="5" length="#ht_length" lineColor="black" mx="1.32292" my="2.64583" name="A4" type="endLine" typeLine="hair"/>
+            <line firstPoint="5" id="6" lineColor="black" secondPoint="1" typeLine="hair"/>
+            <point firstPoint="2" id="7" length="1.5*#velcro_width" lineColor="black" mx="1.32292" my="2.64583" name="A3" secondPoint="3" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="7" id="8" length="-#rolltop_height" lineColor="black" mx="1.32292" my="2.64583" name="A5" secondPoint="2" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="8" id="9" length="#rolltop_width" lineColor="black" mx="1.32292" my="2.64583" name="A6" secondPoint="7" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="9" id="10" length="#rolltop_height" lineColor="black" mx="1.32292" my="2.64583" name="A7" secondPoint="8" type="normal" typeLine="hair"/>
+            <point firstPoint="2" id="11" length="(#tt_length-#zipper_length)/2" lineColor="black" mx="1.32292" my="2.64583" name="A8" secondPoint="3" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="11" id="12" length="#zipper_distance_to_top" lineColor="black" mx="1.32292" my="2.64583" name="A9" secondPoint="2" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="12" id="13" length="-#zipper_length" lineColor="black" mx="1.32292" my="2.64583" name="A10" secondPoint="11" type="normal" typeLine="hair"/>
+            <point basePoint="10" id="14" lineColor="black" mx="1.32292" my="2.64583" name="A11" p1Line="5" p2Line="1" type="height" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="15" idObject="1" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="16" idObject="2" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="17" idObject="7" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="18" idObject="8" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="19" idObject="9" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="20" idObject="10" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="21" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="22" idObject="5" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="24" idObject="10" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="25" idObject="3" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="26" idObject="5" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+            <point id="27" idObject="14" inUse="true" mx="1.32292" my="2.64583" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="23" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="15" type="NodePoint"/>
+                    <node idObject="16" type="NodePoint"/>
+                    <node idObject="17" type="NodePoint"/>
+                    <node idObject="18" type="NodePoint"/>
+                    <node idObject="19" type="NodePoint"/>
+                    <node idObject="20" type="NodePoint"/>
+                    <node idObject="21" type="NodePoint"/>
+                    <node idObject="22" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="28" inLayout="true" mx="218.062" my="133.26" name="zipper_garage" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="24" type="NodePoint"/>
+                    <node idObject="25" type="NodePoint"/>
+                    <node idObject="26" type="NodePoint"/>
+                    <node after="0" idObject="27" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
