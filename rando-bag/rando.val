@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://seamly.net).-->
+    <version>0.6.5</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <increments>
+        <increment description="" formula="330" name="#width"/>
+        <increment description="" formula="230" name="#length"/>
+        <increment description="" formula="200" name="#height"/>
+        <increment description="" formula="10" name="#seam_allowance"/>
+        <increment description="" formula="50" name="#curve_radius"/>
+        <increment description="" formula="70" name="#brim"/>
+    </increments>
+    <draw name="base">
+        <calculation>
+            <point id="1" mx="1.32292" my="2.64583" name="A" showPointName="true" type="single" x="7.9375" y="10.5833"/>
+            <point angle="90" basePoint="1" id="2" length="#length-#curve_radius" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A1" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="1" id="3" length="#width/2" lineColor="black" lineType="solidLine" mx="1.32292" my="3.76095" name="A2" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="3" id="4" length="#length" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A3" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="4" id="5" length="(#width/2)-#curve_radius" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A4" showPointName="true" type="endLine"/>
+            <line firstPoint="5" id="6" lineColor="black" lineType="solidLine" secondPoint="2"/>
+            <point angle="270" basePoint="1" id="7" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A5" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="3" id="8" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A6" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="4" id="9" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A7" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="1" id="10" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A8" showPointName="true" type="endLine"/>
+            <point angle="0" firstPoint="2" id="11" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A9" secondPoint="5" showPointName="true" type="normal"/>
+            <point angle="0" firstPoint="5" id="12" length="-#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A10" secondPoint="2" showPointName="true" type="normal"/>
+            <point firstPoint="1" id="15" length="#brim" lineColor="black" lineType="none" mx="1.32292" my="2.64583" name="A13" secondPoint="10" showPointName="true" type="alongLine"/>
+            <point firstPoint="2" id="16" length="#brim" lineColor="black" lineType="none" mx="1.32292" my="2.64583" name="A14" secondPoint="11" showPointName="true" type="alongLine"/>
+            <point firstPoint="5" id="17" length="#brim" lineColor="black" lineType="none" mx="1.32292" my="2.64583" name="A15" secondPoint="12" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="18" length="#brim" lineColor="black" lineType="none" mx="1.32292" my="2.64583" name="A16" secondPoint="9" showPointName="true" type="alongLine"/>
+            <point angle="180" basePoint="2" id="19" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A17" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="5" id="20" length="#height" lineColor="black" lineType="solidLine" mx="1.32292" my="2.64583" name="A18" showPointName="true" type="endLine"/>
+            <point firstPoint="2" id="21" length="#brim" lineColor="black" lineType="none" mx="1.32292" my="2.64583" name="A19" secondPoint="19" showPointName="true" type="alongLine"/>
+            <point firstPoint="5" id="22" length="#brim" lineColor="black" lineType="none" mx="1.32292" my="2.64583" name="A20" secondPoint="20" showPointName="true" type="alongLine"/>
+        </calculation>
+        <modeling>
+            <point id="23" idObject="3" inUse="true" mx="1.32292" my="3.76095" showPointName="true" type="modeling"/>
+            <point id="24" idObject="10" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="25" idObject="19" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="26" idObject="2" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="27" idObject="11" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="28" idObject="12" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="29" idObject="5" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="30" idObject="20" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="31" idObject="9" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="33" idObject="8" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="34" idObject="7" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="35" idObject="1" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="36" idObject="15" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="37" idObject="21" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="38" idObject="2" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="39" idObject="16" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="40" idObject="17" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="41" idObject="5" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="42" idObject="22" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+            <point id="43" idObject="18" inUse="true" mx="1.32292" my="2.64583" showPointName="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="32" inLayout="true" mx="0" my="0" name="PatternPiece" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="2" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="0" my="0" rotation="0" visible="false" width="3"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="23" type="NodePoint"/>
+                    <node idObject="24" type="NodePoint"/>
+                    <node idObject="25" type="NodePoint"/>
+                    <node idObject="26" type="NodePoint"/>
+                    <node idObject="27" type="NodePoint"/>
+                    <node idObject="28" type="NodePoint"/>
+                    <node idObject="29" type="NodePoint"/>
+                    <node idObject="30" type="NodePoint"/>
+                    <node after="0" idObject="31" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="44" inLayout="true" mx="306.127" my="42.5177" name="PatternPiece_1" seamAllowance="true" united="false" version="2" width="#seam_allowance">
+                <data annotation="" foldPosition="" fontSize="0" height="2" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="0" my="0" rotation="0" visible="false" width="3"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="33" type="NodePoint"/>
+                    <node idObject="34" type="NodePoint"/>
+                    <node idObject="35" type="NodePoint"/>
+                    <node idObject="36" type="NodePoint"/>
+                    <node idObject="37" type="NodePoint"/>
+                    <node idObject="38" type="NodePoint"/>
+                    <node idObject="39" type="NodePoint"/>
+                    <node idObject="40" type="NodePoint"/>
+                    <node idObject="41" type="NodePoint"/>
+                    <node idObject="42" type="NodePoint"/>
+                    <node after="0" idObject="43" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
